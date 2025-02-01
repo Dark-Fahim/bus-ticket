@@ -14,66 +14,76 @@
 
 <body>
     <!-- Header part start -->
-    <header class="container mx-auto">
-        <div class="navbar bg-base-100">
-            <div class="navbar-start">
-              <div class="dropdown">
-                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="h-5 w-5"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor">
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M4 6h16M4 12h8m-8 6h16" />
-                  </svg>
+    <header>
+        <!-- Navbar -->
+        <nav class="container mx-auto">
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                            <li><a>Home</a></li>
+                            <li>
+                                <a>About</a>
+
+                            </li>
+                            <li><a>Destination</a></li>
+                            <li><a>Search</a></li>
+                        </ul>
+                    </div>
+                    <a class="font-extrabold text-3xl">P-Ticket</a>
                 </div>
-                <ul
-                  tabindex="0"
-                  class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-                  <li><a>Home</a></li>
-                  <li>
-                    <a>About</a>
-                    
-                  </li>
-                  <li><a>Destination</a></li>
-                  <li><a>Search</a></li>
-                </ul>
-              </div>
-              <a class="font-extrabold text-3xl">P-Ticket</a>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1">
+                        <li><a>Home</a></li>
+                        <li>
+                            <a href="">About</a>
+                        </li>
+                        <li><a>Destination</a></li>
+                        <li><a>Search</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end ">
+                    <a
+                        class=" flex gap-1 text-[#1DD100] font-bold rounded-lg [#1DD1001A] border-2 border-[#1DD100] py-3 px-5">Bus
+                        <img src="images/bus-icon.png" alt=""></a>
+                </div>
             </div>
-            <div class="navbar-center hidden lg:flex">
-              <ul class="menu menu-horizontal px-1">
-                <li><a>Home</a></li>
-                <li>
-                    <a href="">About</a>
-                </li>
-                <li><a>Destination</a></li>
-                <li><a>Search</a></li>
-              </ul>
+        </nav>
+        <!-- Navbar end -->
+
+        <!-- Banner start -->
+        <div class="flex flex-col justify-center gap-4 lg:gap-6 md:gap-2 bg-[url('/images/banner.png')] bg-no-repeat bg-contain bg-center w-full lg:my-10 min-h-screen">
+            <h1 class="lg:text-6xl sm:text-3xl text-center text-white font-extrabold ">End-to-End Travel with <br> <span class="text-[#1DD100]">P Paribahan</span></h1>
+            <p class="text-center sm:text-[10px] text-white md:text-[16px] lg:text-2xl">Yes, you can run unit tests and view the results directly within the app. <br> The integrated testing features allow for a streamlined .</p>
+            <div class="text-center sm:text-sm">
+                <button class="py-3 px-5 text-black bg-[#1DD100] font-bold rounded-lg">Buy Tickets</button>
             </div>
-            <div class="navbar-end ">
-              <a class=" flex gap-1 text-[#1DD100] font-bold rounded-lg [#1DD1001A] border-2 border-[#1DD100] py-3 px-5">Bus <img src="images/bus-icon.png" alt=""></a>
-            </div>
-          </div>
+            
+        </div>
+        <!-- Banner end-->
+
     </header>
     <!-- Header part end -->
-     
-    <!-- main part Start  -->
-     <main>
 
-     </main>
+    <!-- main part Start  -->
+    <main>
+
+    </main>
     <!-- main part End -->
 
 
     <!-- footer part start -->
-     <footer>
+    <footer>
 
-     </footer>
+    </footer>
     <!-- footer part end -->
 
 
