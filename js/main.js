@@ -56,13 +56,13 @@ function discountCoupon(){
         const total = getTextValueId('total-price')
         const devide = parseInt(total) / 100;
         const p = document.createElement('p')
-        p.innerText ='BDT' + (devide * 15)
+        p.innerText ='BDT ' + (devide * 15)
         document.getElementById('total-discount').appendChild(p)
         const discounted = devide * 85;
         setValueById('grand-total', discounted)
         giveDiscount = true
         couponText.value = ''
-        document.getElementById('apply-coupon-container').classList.add('flex')
+        document.getElementById('apply-coupon-container').classList.add('hidden')
         document.getElementById('total-discount').classList.remove('hidden')
         document.getElementById('total-discount').classList.add('flex')
     }
