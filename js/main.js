@@ -106,6 +106,7 @@ document.getElementById('confirm-purchase-btn').addEventListener('click', functi
     successContainer.classList.replace('hidden', 'flex')
     document.getElementById('main-container').classList.add('hidden')
     document.getElementById('header-container').classList.add('hidden')
+    document.getElementById('footer-container').classList.add('hidden')
 })
 
 function getTextValueId(id) {
