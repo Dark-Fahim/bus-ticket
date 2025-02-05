@@ -13,9 +13,9 @@
 </head>
 
 <body>
-    
+
     <!-- Header part start -->
-    <header>
+    <header id="header-container">
         <!-- Navbar -->
         <nav class="container mx-auto">
             <div class="navbar bg-base-100">
@@ -69,7 +69,8 @@
                 view the results directly within the app. <br> The integrated testing features allow for a streamlined .
             </p>
             <div class="text-center sm:text-sm">
-                <button class="md:py-3 md:px-5 py-1 px-3 text-black bg-[#1DD100] font-bold rounded-lg"><a href="#purchase-section">Buy Tickets</a></button>
+                <button class="md:py-3 md:px-5 py-1 px-3 text-black bg-[#1DD100] font-bold rounded-lg"><a
+                        href="#purchase-section">Buy Tickets</a></button>
             </div>
 
         </div>
@@ -79,7 +80,7 @@
     <!-- Header part end -->
 
     <!-- main part Start  -->
-    <main class="container mx-auto">
+    <main id="main-container" class="container mx-auto">
         <!-- Best offer past start -->
         <section>
             <h1 class="mb-5 text-4xl font-bold text-center">Best offers for you</h1>
@@ -162,7 +163,7 @@
 
                         </div>
                     </div>
-                    
+
                     <div class="flex flex-col items-center justify-center flex-grow gap-3">
                         <img class="w-[40px]" src="./images/fare.png" alt="">
                         <h2 class="text-xl font-bold">550 Taka</h2>
@@ -195,81 +196,101 @@
                             <!-- A serial -->
                             <div class="flex text-[#03071299]  justify-between trxtitems-center">
                                 <h2 class="font-bold">A</h2>
-                                <button id="a1" onclick="getSeat('a1')" class="rounded-lg btn disabled:bg-[#1DD100] disabled:text-white">A1
+                                <button id="a1" onclick="getSeat('a1')"
+                                    class="rounded-lg btn disabled:bg-[#1DD100] disabled:text-white">A1
                                 </button>
-                                <button id="a2" onclick="getSeat('a2')" class="rounded-lg btn disabled:bg-[#1DD100] disabled:text-white">A2
+                                <button id="a2" onclick="getSeat('a2')"
+                                    class="rounded-lg btn disabled:bg-[#1DD100] disabled:text-white">A2
                                 </button>
                             </div>
                             <!-- b serial -->
                             <div class="flex text-[#03071299]  justify-between trxtitems-center">
                                 <h2 class="font-bold">B</h2>
-                                <button id="b1" onclick="getSeat('b1')" class="rounded-lg btn disabled:bg-[#1DD100] disabled:text-white">B1
+                                <button id="b1" onclick="getSeat('b1')"
+                                    class="rounded-lg btn disabled:bg-[#1DD100] disabled:text-white">B1
                                 </button>
-                                <button id="b2" onclick="getSeat('b2')" class="rounded-lg btn disabled:bg-[#1DD100] disabled:text-white">B2
+                                <button id="b2" onclick="getSeat('b2')"
+                                    class="rounded-lg btn disabled:bg-[#1DD100] disabled:text-white">B2
                                 </button>
                             </div>
                             <!-- C serial -->
                             <div class="flex text-[#03071299]  justify-between trxtitems-center">
                                 <h2 class="font-bold">C</h2>
-                                <button id="c1" onclick="getSeat('c1')" class="rounded-lg btn disabled:bg-[#1DD100] disabled:text-white">C1
+                                <button id="c1" onclick="getSeat('c1')"
+                                    class="rounded-lg btn disabled:bg-[#1DD100] disabled:text-white">C1
                                 </button>
-                                <button id="c2" onclick="getSeat('c2')" class="rounded-lg btn disabled:bg-[#1DD100] disabled:text-white">C2
+                                <button id="c2" onclick="getSeat('c2')"
+                                    class="rounded-lg btn disabled:bg-[#1DD100] disabled:text-white">C2
                                 </button>
                             </div>
                             <!-- D serial -->
                             <div class="flex text-[#03071299]  justify-between trxtitems-center">
                                 <h2 class="font-bold">D</h2>
-                                <button id="d1" onclick="getSeat('d1')" class="rounded-lg btn disabled:bg-[#1DD100] disabled:text-white">D1
+                                <button id="d1" onclick="getSeat('d1')"
+                                    class="rounded-lg btn disabled:bg-[#1DD100] disabled:text-white">D1
                                 </button>
-                                <button id="d2" onclick="getSeat('d2')" class="rounded-lg btn disabled:bg-[#1DD100] disabled:text-white">D2
+                                <button id="d2" onclick="getSeat('d2')"
+                                    class="rounded-lg btn disabled:bg-[#1DD100] disabled:text-white">D2
                                 </button>
                             </div>
                             <!-- E serial -->
                             <div class="flex text-[#03071299]  justify-between trxtitems-center">
                                 <h2 class="font-bold">E</h2>
-                                <button id="e1" onclick="getSeat('e1')" class="rounded-lg btn disabled:bg-[#1DD100] disabled:text-white">E1
+                                <button id="e1" onclick="getSeat('e1')"
+                                    class="rounded-lg btn disabled:bg-[#1DD100] disabled:text-white">E1
                                 </button>
-                                <button id="e2" onclick="getSeat('e2')" class="rounded-lg btn disabled:bg-[#1DD100] disabled:text-white">E2
+                                <button id="e2" onclick="getSeat('e2')"
+                                    class="rounded-lg btn disabled:bg-[#1DD100] disabled:text-white">E2
                                 </button>
                             </div>
                             <!-- F serial -->
                             <div class="flex text-[#03071299]  justify-between trxtitems-center">
-                                <h2  class="font-bold">F</h2>
-                                <button id="f1" onclick="getSeat('f1')" class="rounded-lg btn disabled:bg-[#1DD100] disabled:text-white">F1
+                                <h2 class="font-bold">F</h2>
+                                <button id="f1" onclick="getSeat('f1')"
+                                    class="rounded-lg btn disabled:bg-[#1DD100] disabled:text-white">F1
                                 </button>
-                                <button id="f2" onclick="getSeat('f2')" class="rounded-lg btn disabled:bg-[#1DD100] disabled:text-white">F2
+                                <button id="f2" onclick="getSeat('f2')"
+                                    class="rounded-lg btn disabled:bg-[#1DD100] disabled:text-white">F2
                                 </button>
                             </div>
                             <!-- G serial -->
                             <div class="flex text-[#03071299]  justify-between trxtitems-center">
                                 <h2 class="font-bold">G</h2>
-                                <button id="g1" onclick="getSeat('g1')" class="rounded-lg btn disabled:bg-[#1DD100] disabled:text-white">G1
+                                <button id="g1" onclick="getSeat('g1')"
+                                    class="rounded-lg btn disabled:bg-[#1DD100] disabled:text-white">G1
                                 </button>
-                                <button id="g2" onclick="getSeat('g2')" class="rounded-lg btn disabled:bg-[#1DD100] disabled:text-white">G2
+                                <button id="g2" onclick="getSeat('g2')"
+                                    class="rounded-lg btn disabled:bg-[#1DD100] disabled:text-white">G2
                                 </button>
                             </div>
                             <!-- H serial -->
                             <div class="flex text-[#03071299]  justify-between trxtitems-center">
                                 <h2 class="font-bold">H</h2>
-                                <button id="h1" onclick="getSeat('h1')" class="rounded-lg btn disabled:bg-[#1DD100] disabled:text-white">H1
+                                <button id="h1" onclick="getSeat('h1')"
+                                    class="rounded-lg btn disabled:bg-[#1DD100] disabled:text-white">H1
                                 </button>
-                                <button id="h2" onclick="getSeat('h2')" class="rounded-lg btn disabled:bg-[#1DD100] disabled:text-white">H2
+                                <button id="h2" onclick="getSeat('h2')"
+                                    class="rounded-lg btn disabled:bg-[#1DD100] disabled:text-white">H2
                                 </button>
                             </div>
                             <!-- I serial -->
                             <div class="flex text-[#03071299]  justify-between trxtitems-center">
                                 <h2 class="font-bold">I</h2>
-                                <button id="i1" onclick="getSeat('i1')" class="rounded-lg btn disabled:bg-[#1DD100] disabled:text-white">I1
+                                <button id="i1" onclick="getSeat('i1')"
+                                    class="rounded-lg btn disabled:bg-[#1DD100] disabled:text-white">I1
                                 </button>
-                                <button id="i2" onclick="getSeat('i2')" class="rounded-lg btn disabled:bg-[#1DD100] disabled:text-white">I2
+                                <button id="i2" onclick="getSeat('i2')"
+                                    class="rounded-lg btn disabled:bg-[#1DD100] disabled:text-white">I2
                                 </button>
                             </div>
                             <!-- J serial -->
                             <div class="flex text-[#03071299]  justify-between trxtitems-center">
                                 <h2 class="font-bold">J</h2>
-                                <button id="j1" onclick="getSeat('j1')" class="rounded-lg btn disabled:bg-[#1DD100] disabled:text-white">J1
+                                <button id="j1" onclick="getSeat('j1')"
+                                    class="rounded-lg btn disabled:bg-[#1DD100] disabled:text-white">J1
                                 </button>
-                                <button id="j2" onclick="getSeat('j2')" class="rounded-lg btn disabled:bg-[#1DD100] disabled:text-white">J2
+                                <button id="j2" onclick="getSeat('j2')"
+                                    class="rounded-lg btn disabled:bg-[#1DD100] disabled:text-white">J2
                                 </button>
                             </div>
                         </div>
@@ -279,72 +300,92 @@
                         <div class="flex-grow space-y-4">
                             <!-- A serial -->
                             <div class="flex text-[#03071299]  justify-between trxtitems-center">
-                                <button id="a3" onclick="getSeat('a3')" class="rounded-lg btn disabled:bg-[#1DD100] disabled:text-white">A3
+                                <button id="a3" onclick="getSeat('a3')"
+                                    class="rounded-lg btn disabled:bg-[#1DD100] disabled:text-white">A3
                                 </button>
-                                <button id="a4" onclick="getSeat('a4')" class="rounded-lg btn disabled:bg-[#1DD100] disabled:text-white">A4
+                                <button id="a4" onclick="getSeat('a4')"
+                                    class="rounded-lg btn disabled:bg-[#1DD100] disabled:text-white">A4
                                 </button>
                             </div>
                             <!-- b serial -->
                             <div class="flex text-[#03071299]  justify-between trxtitems-center">
-                                <button id="b3" onclick="getSeat('b3')" class="rounded-lg btn disabled:bg-[#1DD100] disabled:text-white">B3
+                                <button id="b3" onclick="getSeat('b3')"
+                                    class="rounded-lg btn disabled:bg-[#1DD100] disabled:text-white">B3
                                 </button>
-                                <button id="b4" onclick="getSeat('b4')" class="rounded-lg btn disabled:bg-[#1DD100] disabled:text-white">B4
+                                <button id="b4" onclick="getSeat('b4')"
+                                    class="rounded-lg btn disabled:bg-[#1DD100] disabled:text-white">B4
                                 </button>
                             </div>
                             <!-- C serial -->
                             <div class="flex text-[#03071299]  justify-between trxtitems-center">
-                                <button id="c3" onclick="getSeat('c3')" class="rounded-lg btn disabled:bg-[#1DD100] disabled:text-white">C3
+                                <button id="c3" onclick="getSeat('c3')"
+                                    class="rounded-lg btn disabled:bg-[#1DD100] disabled:text-white">C3
                                 </button>
-                                <button id="c4" onclick="getSeat('c4')" class="rounded-lg btn disabled:bg-[#1DD100] disabled:text-white">C4
+                                <button id="c4" onclick="getSeat('c4')"
+                                    class="rounded-lg btn disabled:bg-[#1DD100] disabled:text-white">C4
                                 </button>
                             </div>
                             <!-- D serial -->
                             <div class="flex text-[#03071299]  justify-between trxtitems-center">
-                                <button id="d3" onclick="getSeat('d3')" class="rounded-lg btn disabled:bg-[#1DD100] disabled:text-white">D3
+                                <button id="d3" onclick="getSeat('d3')"
+                                    class="rounded-lg btn disabled:bg-[#1DD100] disabled:text-white">D3
                                 </button>
-                                <button id="d4" onclick="getSeat('d4')" class="rounded-lg btn disabled:bg-[#1DD100] disabled:text-white">D4
+                                <button id="d4" onclick="getSeat('d4')"
+                                    class="rounded-lg btn disabled:bg-[#1DD100] disabled:text-white">D4
                                 </button>
                             </div>
                             <!-- E serial -->
                             <div class="flex text-[#03071299]  justify-between trxtitems-center">
-                                <button id="e3" onclick="getSeat('e3')" class="rounded-lg btn disabled:bg-[#1DD100] disabled:text-white">E3
+                                <button id="e3" onclick="getSeat('e3')"
+                                    class="rounded-lg btn disabled:bg-[#1DD100] disabled:text-white">E3
                                 </button>
-                                <button id="e4" onclick="getSeat('e4')" class="rounded-lg btn disabled:bg-[#1DD100] disabled:text-white">E4
+                                <button id="e4" onclick="getSeat('e4')"
+                                    class="rounded-lg btn disabled:bg-[#1DD100] disabled:text-white">E4
                                 </button>
                             </div>
                             <!-- F serial -->
                             <div class="flex text-[#03071299]  justify-between trxtitems-center">
-                                <button id="f3" onclick="getSeat('f3')" class="rounded-lg btn disabled:bg-[#1DD100] disabled:text-white">F3
+                                <button id="f3" onclick="getSeat('f3')"
+                                    class="rounded-lg btn disabled:bg-[#1DD100] disabled:text-white">F3
                                 </button>
-                                <button id="f4" onclick="getSeat('f4')" class="rounded-lg btn disabled:bg-[#1DD100] disabled:text-white">F4
+                                <button id="f4" onclick="getSeat('f4')"
+                                    class="rounded-lg btn disabled:bg-[#1DD100] disabled:text-white">F4
                                 </button>
                             </div>
                             <!-- G serial -->
                             <div class="flex text-[#03071299]  justify-between trxtitems-center">
-                                <button id="g3" onclick="getSeat('g3')" class="rounded-lg btn disabled:bg-[#1DD100] disabled:text-white">G3
+                                <button id="g3" onclick="getSeat('g3')"
+                                    class="rounded-lg btn disabled:bg-[#1DD100] disabled:text-white">G3
                                 </button>
-                                <button id="g4" onclick="getSeat('g4')" class="rounded-lg btn disabled:bg-[#1DD100] disabled:text-white">G4
+                                <button id="g4" onclick="getSeat('g4')"
+                                    class="rounded-lg btn disabled:bg-[#1DD100] disabled:text-white">G4
                                 </button>
                             </div>
                             <!-- H serial -->
                             <div class="flex text-[#03071299]  justify-between trxtitems-center">
-                                <button id="h3" onclick="getSeat('h3')" class="rounded-lg btn disabled:bg-[#1DD100] disabled:text-white">H3
+                                <button id="h3" onclick="getSeat('h3')"
+                                    class="rounded-lg btn disabled:bg-[#1DD100] disabled:text-white">H3
                                 </button>
-                                <button id="h4" onclick="getSeat('h4')" class="rounded-lg btn disabled:bg-[#1DD100] disabled:text-white">H4
+                                <button id="h4" onclick="getSeat('h4')"
+                                    class="rounded-lg btn disabled:bg-[#1DD100] disabled:text-white">H4
                                 </button>
                             </div>
                             <!-- I serial -->
                             <div class="flex text-[#03071299]  justify-between trxtitems-center">
-                                <button id="i3" onclick="getSeat('i3')" class="rounded-lg btn disabled:bg-[#1DD100] disabled:text-white">I3
+                                <button id="i3" onclick="getSeat('i3')"
+                                    class="rounded-lg btn disabled:bg-[#1DD100] disabled:text-white">I3
                                 </button>
-                                <button id="i4" onclick="getSeat('i4')" class="rounded-lg btn disabled:bg-[#1DD100] disabled:text-white">I4
+                                <button id="i4" onclick="getSeat('i4')"
+                                    class="rounded-lg btn disabled:bg-[#1DD100] disabled:text-white">I4
                                 </button>
                             </div>
                             <!-- J serial -->
                             <div class="flex text-[#03071299]  justify-between trxtitems-center">
-                                <button id="j3" onclick="getSeat('j3')" class="rounded-lg btn disabled:bg-[#1DD100] disabled:text-white">J3
+                                <button id="j3" onclick="getSeat('j3')"
+                                    class="rounded-lg btn disabled:bg-[#1DD100] disabled:text-white">J3
                                 </button>
-                                <button id="j4" onclick="getSeat('j4')" class="rounded-lg btn disabled:bg-[#1DD100] disabled:text-white">J4
+                                <button id="j4" onclick="getSeat('j4')"
+                                    class="rounded-lg btn disabled:bg-[#1DD100] disabled:text-white">J4
                                 </button>
                             </div>
                         </div>
@@ -361,24 +402,25 @@
                     </div>
                     <!-- purchase seats list -->
                     <div class="flex justify-between p-5 border-b">
-                        <p class="font-bold">Seats <span id="purchase-seats" class="bg-[#1DD100] px-3 py-1 rounded-md">0</span></p>
+                        <p class="font-bold">Seats <span id="purchase-seats"
+                                class="bg-[#1DD100] px-3 py-1 rounded-md">0</span></p>
                         <p class="font-bold">Class</p>
                         <p class="font-bold">Price</p>
                     </div>
                     <!-- Dynamic items -->
                     <div id="seats-details-container" class="p-5 space-y-5 border-b inter">
                     </div>
-                    
+
                     <div id="toast" class="hidden toast">
                         <div class="alert alert-info">
-                          <span>Plase Enter a valid Coupon</span>
+                            <span>Plase Enter a valid Coupon</span>
                         </div>
-                      </div>
+                    </div>
                     <div id="warning-toast" class="hidden toast">
                         <div class="alert alert-warning inter">
-                          <span>Already Selected 4 Seats</span>
+                            <span>Already Selected 4 Seats</span>
                         </div>
-                      </div>
+                    </div>
                     <!-- flex justify-between p-5 border-b -->
                     <!-- total -->
                     <div class="p-5 space-y-4 font-bold inter">
@@ -388,7 +430,8 @@
                         </div>
                         <label id="apply-coupon-container" class="flex items-center gap-2 p-3 rounded-md input">
                             <input id="coupon-text" type="text" class=" grow" placeholder="Have any Coupon?" />
-                            <button id="apply-btn" onclick="discountCoupon()" disabled class="rounded-lg btn bg-none">Apply</button>
+                            <button id="apply-btn" onclick="discountCoupon()" disabled
+                                class="rounded-lg btn bg-none">Apply</button>
                         </label>
                         <div id="total-discount" class="flex justify-between">
                             <p>Total Discount:</p>
@@ -399,32 +442,53 @@
                         </div>
                     </div>
                     <!-- Passanger info -->
-                     <div class="space-y-4 font-bold">
+                    <div class="space-y-4 font-bold">
                         <p>Passanger Name*</p>
-                        <input type="text" class="w-full p-3 border shadow-sm rounded-xl" placeholder="Enter Your name" name="" id="">
-                     </div>
-                     <div class="my-5 space-y-4 font-bold inter">
+                        <input type="text" class="w-full p-3 border shadow-sm rounded-xl" placeholder="Enter Your name"
+                            name="" id="">
+                    </div>
+                    <div class="my-5 space-y-4 font-bold inter">
                         <p>Phone Number*</p>
-                        <input  type="number" class="w-full p-3 border shadow-sm rounded-xl" placeholder="Enter Your name" name="" id="number-input">
-                     </div>
-                     <div class="space-y-4 font-bold">
+                        <input type="number" class="w-full p-3 border shadow-sm rounded-xl"
+                            placeholder="Enter Your name" name="" id="number-input">
+                    </div>
+                    <div class="space-y-4 font-bold">
                         <p>Email id*</p>
-                        <input type="email" class="w-full p-3 border shadow-sm rounded-xl" placeholder="Enter Your name" name="" id="">
-                     </div>
-                     <button id="confirm-purchase-btn" class="w-full btn my-7 text-white font-bold rounded-xl bg-[#1DD100]" disabled>Next</button>
-                     <div class="flex justify-between">
+                        <input type="email" class="w-full p-3 border shadow-sm rounded-xl" placeholder="Enter Your name"
+                            name="" id="">
+                    </div>
+                    <button id="confirm-purchase-btn"
+                        class="w-full btn my-7 text-white font-bold rounded-xl bg-[#1DD100]" disabled>Next</button>
+                    <div class="flex justify-between">
                         <p>Terms and Conditions</p>
                         <p>Cancellation Policy</p>
-                     </div>
+                    </div>
                 </div>
                 <!-- purchase end -->
             </div>
 
         </section>
         <!-- Ticket purchase part end -->
+
+        
     </main>
     <!-- main part End -->
+    <section id="success-container" class="items-center justify-center hidden">
+        <div class="flex  p-7 flex-col items-center gap-3 mx-auto bg-white rounded-lg lg:w-[700px]">
+            <div class="flex flex-col items-center justify-center">
+                <img src="./images/success.png" alt="">
+                <h2 class="text-[#20AE5C]">Success</h2>
+            </div>
+            <p class="font-bold text-center md:text-lg">Thank you for Booking Our Bus Seats. <br>
+                We are working hard to find the best service and deals for you
+            </p>
+            <p class="text-[#4A4A4A] text-center ">
+                Shortly you will find a confirmation in your email
+            </p>
+            <button class="px-6 lg:px-14 py-3 text-white bg-[#20AE5C] rounded-full font-bold">Continue</button>
 
+        </div>
+    </section>
 
     <!-- footer part start -->
     <footer>

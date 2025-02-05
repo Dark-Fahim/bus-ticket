@@ -101,6 +101,12 @@ function activePurchaseBtn(){
         purchaseBtn.setAttribute('disabled', false)
     }
 }
+document.getElementById('confirm-purchase-btn').addEventListener('click', function(){
+    const successContainer = document.getElementById('success-container')
+    successContainer.classList.replace('hidden', 'flex')
+    document.getElementById('main-container').classList.add('hidden')
+    document.getElementById('header-container').classList.add('hidden')
+})
 
 function getTextValueId(id) {
     const element = document.getElementById(id)
