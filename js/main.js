@@ -94,7 +94,7 @@ function activePurchaseBtn(){
     const getInputValue = getInputNum.value
     const purchaseSeats = getTextValueId('purchase-seats')
     const purchaseBtn = document.getElementById('confirm-purchase-btn')
-    if(getInputValue.length > 10 && parseInt(purchaseSeats) > 0){
+    if(getInputValue.length < 12 && parseInt(purchaseSeats) > 0 && getInputValue.length > 10){
         purchaseBtn.removeAttribute('disabled', false)
     }
     else{

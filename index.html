@@ -62,14 +62,14 @@
 
         <!-- Banner start -->
         <div
-            class="flex flex-col justify-center gap-4 lg:gap-6 md:gap-2 bg-[url('/images/banner.png')] bg-no-repeat bg-contain bg-center w-full lg:my-10 min-h-screen">
+            class="flex flex-col justify-center gap-4 lg:gap-6 md:gap-2 bg-[url('/images/banner.png')] bg-no-repeat bg-contain bg-center w-full lg:my-10 md:min-h-screen lg:min-h-screen">
             <h1 class="font-extrabold text-center text-white lg:text-6xl sm:text-3xl ">End-to-End Travel with <br> <span
                     class="text-[#1DD100]">P Paribahan</span></h1>
-            <p class="text-center sm:text-[10px] text-white md:text-[16px] lg:text-2xl">Yes, you can run unit tests and
+            <p class="text-center text-[10px] text-white md:text-[16px] lg:text-2xl">Yes, you can run unit tests and
                 view the results directly within the app. <br> The integrated testing features allow for a streamlined .
             </p>
             <div class="text-center sm:text-sm">
-                <button class="py-3 px-5 text-black bg-[#1DD100] font-bold rounded-lg"><a href="#purchase-section">Buy Tickets</a></button>
+                <button class="md:py-3 md:px-5 py-1 px-3 text-black bg-[#1DD100] font-bold rounded-lg"><a href="#purchase-section">Buy Tickets</a></button>
             </div>
 
         </div>
@@ -83,10 +83,10 @@
         <!-- Best offer past start -->
         <section>
             <h1 class="mb-5 text-4xl font-bold text-center">Best offers for you</h1>
-            <div class="flex flex-wrap items-center justify-between">
+            <div class="flex flex-col items-center justify-between gap-5 lg:flex-row">
                 <!-- Offer 1 -->
                 <div
-                    class="flex bg-[#FFBF0F] p-5 rounded-xl justify-between w-auto lg:w-[570px] h-[220px] items-center">
+                    class="flex bg-[#FFBF0F] p-5 rounded-xl justify-between md:w-3/4 w-auto lg:w-[570px] h-[220px] items-center ">
                     <div>
                         <h2 class="text-4xl font-extrabold">15% OFF</h2>
                         <p class="text-lg font-bold">on your next purchase</p>
@@ -100,7 +100,7 @@
                 </div>
                 <!-- offer 2 -->
                 <div
-                    class="flex bg-[#F78C9C] p-5 rounded-xl justify-between w-auto lg:w-[570px] h-[220px] items-center">
+                    class="flex bg-[#F78C9C] p-5 rounded-xl justify-between w-auto lg:w-[570px] h-[220px] items-center md:w-3/4">
                     <div>
                         <h2 class="text-4xl font-extrabold">20% OFF</h2>
                         <p class="text-lg font-bold">on your next purchase</p>
@@ -127,10 +127,10 @@
                 <h2 class="my-5 text-4xl font-bold text-center">P H Paribahan</h2>
                 <p class="text-center text-[#03071299] my-5">Yes, you can run unit tests and view the results directly
                     within the app. The integrated <br> testing features allow for a streamlined .</p>
-                <div class="flex gap-4">
-                    <div class="w-3/4">
-                        <div class="flex justify-between w-full ">
-                            <div class="flex w-3/4 gap-3">
+                <div class="flex flex-col gap-4 lg:flex-row">
+                    <div class="lg:w-3/4">
+                        <div class="flex flex-col justify-between w-full lg:flex-row">
+                            <div class="flex w-full gap-3 lg:w-3/4">
                                 <img src="./images/bus-logo.png" alt="">
                                 <div class="">
                                     <h3 class="text-2xl font-bold">Greenline Paribahan</h3>
@@ -145,7 +145,7 @@
                                 </button>
                             </div>
                         </div>
-                        <div class="bg-[#F7F8F8] rounded-lg w-full p-5">
+                        <div class="bg-[#F7F8F8] rounded-lg p-5 ">
                             <div class="flex justify-between w-full p-3 border-b m">
                                 <p class="text-[#00000066]">Route</p>
                                 <p class="font-bold">Dhaka-Sylhet</p>
@@ -154,7 +154,7 @@
                                 <p class="text-[#00000066]">Departure Time</p>
                                 <p class="font-bold">9:00 PM</p>
                             </div>
-                            <div class="flex justify-between w-full p-3 m">
+                            <div class="flex flex-col justify-between w-full p-3 md:flex-row lg:flex-row">
                                 <p class="font-bold rounded-md btn">Boarding Point - Laxmipur</p>
                                 <p class="font-bold rounded-md btn">Dropping Point - Bogura</p>
                                 <p class="font-bold rounded-md btn">Est. Time - 11 Hour</p>
@@ -174,9 +174,9 @@
 
             </div>
             <!-- Seats part -->
-            <div class="container flex p-3 mx-auto my-3 bg-white rounded-md">
+            <div class="container flex flex-col p-3 mx-auto my-3 bg-white rounded-md lg:flex-row">
                 <!-- Seats -->
-                <div class="w-[60%] pr-5 border-r">
+                <div class="lg:w-[60%] pr-5 border-r">
                     <h3 class="pb-3 text-xl font-semibold border-b">Select Your Seat</h3>
                     <div class="flex justify-between py-3 border-b">
                         <div class="flex items-center gap-2 text-[#03071299] font-bold"><img
