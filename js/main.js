@@ -66,7 +66,7 @@ function discountCoupon(){
         document.getElementById('total-discount').classList.remove('hidden')
         document.getElementById('total-discount').classList.add('flex')
     }
-    else if(couponValue === 'couple20'){
+    else if(couponValue === 'Couple20'){
         const total = getTextValueId('total-price')
         const devide = parseInt(total) / 100;
         const p = document.createElement('p')
